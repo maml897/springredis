@@ -1,0 +1,21 @@
+apply plugin: 'java-library'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+eclipse {
+	classpath {
+	    downloadSources = true
+	    downloadJavadoc = false
+	}
+}
+
+dependencies {
+    compile 'org.springframework.data:spring-data-redis:2.0.9.RELEASE'
+    
+    //test12454722222222222222222
+}
